@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, user-scalable=no" />
+<title>RATUL VAI 30S WINGO HACK</title>
+<style>
+  html, body {
+    height: 100%; margin: 0; padding: 0;
+    background: #020205;
+    overflow: hidden;
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    touch-action: none; 
+  }
+
+  iframe {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    border: none;
+    z-index: 1;
+  }
+
+  #uiContainer {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    z-index: 9999999;
+    pointer-events: none;
+  }
+
+  /* --- Floating Mini Button (Chikon Border) --- */
+  #miniBtn {
+    pointer-events: auto;
+    position: fixed;
+    top: 30px; left: 20px;
+    width: 50px; height: 50px;
+    background: linear-gradient(135deg, #bc13fe, #7a00ff);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: move;
+    box-shadow: 0 0 15px rgba(188, 19, 254, 0.5);
+    z-index: 10;
+    overflow: hidden;
+    touch-action: none; 
+    border: 0.8px solid rgba(255, 255, 255, 0.5); /* Chikon Border */
+  }
+  
+  #miniBtn img {
+    width: 90%; height: 90%;
+    object-fit: cover;
+    border-radius: 50%;
+    pointer-events: none;
+  }
+
+  /* --- Small Login Box --- */
+  #loginBox {
+    pointer-events: auto;
+    position: fixed;
+    width: 180px; height: 270px; /* Compact Size */
+    background: #0a0a1a;
+    border-radius: 20px;
+    display: none; 
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: 11;
+    touch-action: none; 
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
+  }
+
+  #loginBox::before {
+    content: '';
+    position: absolute;
+    width: 200%; height: 200%;
+    background: conic-gradient(from 0deg, #bc13fe, #00f2ff, #bc13fe);
+    animation: rotateGlow 3s linear infinite;
+  }
+
+  .inner-login {
+    position: absolute;
+    inset: 2px;
+    background: rgba(10, 10, 26, 0.98);
+    border-radius: 18px;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+  }
+
+  @keyframes rotateGlow {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  .logo-circle {
+    width: 45px; height: 45px;
+    border-radius: 50%;
+    border: 1px solid #bc13fe;
+    margin-bottom: 8px;
+    overflow: hidden;
+  }
+  .logo-circle img { width: 100%; height: 100%; object-fit: cover; }
+
+  h1 {
+    color: #fff; font-size: 9px; text-transform: uppercase;
+    margin-bottom: 10px; letter-spacing: 1px;
+    text-shadow: 0 0 5px #bc13fe;
+  }
+
+  #pwd { 
+    width: 80%; padding: 8px; 
+    background: rgba(255,255,255,0.08); 
+    border: 1px solid rgba(188, 19, 254, 0.5); 
+    border-radius: 10px; color: #fff; 
+    text-align: center; font-size: 10px; 
+    margin-bottom: 5px; outline: none; 
+  }
+
+  #msg { font-size: 9px; margin-bottom: 5px; height: 10px; font-weight: bold; }
+
+  .btn { 
+    width: 85%; padding: 8px; 
+    border-radius: 10px; border: none;
+    font-weight: bold; cursor: pointer; font-size: 9px; 
+    text-transform: uppercase; margin-bottom: 6px;
+    color: white; text-decoration: none;
+    display: block;
+  }
+
+  /* Login Button Gradient */
+  .login-btn { background: linear-gradient(to right, #7a00ff, #bc13fe); }
+
+  /* Telegram Button - Bright Blue Gradient (Like Original) */
+  .telegram-btn { 
+    background: linear-gradient(to right, #0088cc, #00aaff); 
+    box-shadow: 0 4px 20px rgba(0, 136, 204, 0.3);
+  }
+
+  /* --- Mod Box --- */
+  #modBox {
+    pointer-events: auto;
+    position: fixed;
+    width: 170px; height: 130px;
+    background: rgba(15, 15, 35, 0.95);
+    backdrop-filter: blur(10px);
+    border: 1.5px solid #bc13fe;
+    border-radius: 15px;
+    display: none; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 11;
+    touch-action: none; 
+  }
+
+  .closeBtn {
+    position: absolute;
+    top: 3px; right: 10px;
+    color: #ff4444; font-size: 18px; font-weight: bold; cursor: pointer;
+  }
+
+  .mod-title {
+    font-size: 11px; font-weight: 800;
+    background: linear-gradient(90deg, #00f2ff, #bc13fe);
+    -webkit-background-clip: text; color: transparent;
+    margin-bottom: 5px;
+  }
+
+  .time { font-size: 10px; color: #aaa; }
+  .count { font-size: 18px; font-weight: bold; color: #ffffff; }
+  .signal { font-size: 20px; font-weight: 900; color: #00ffcc; text-shadow: 0 0 8px rgba(0, 255, 204, 0.5); }
+</style>
+</head>
+<body>
+
+<iframe src="https://dkwin9.com/#/register?invitationCode=322711171717"></iframe>
+
+<div id="uiContainer">
+  <div id="miniBtn" onclick="openBox()">
+    <img src="https://i.ibb.co.com/6JRmwNQJ/IMG-20260219-191930-656.jpg" alt="Mafi">
+  </div>
+
+  <div id="loginBox">
+    <div class="inner-login">
+      <div class="closeBtn" onclick="closeBox()">×</div>
+      <div class="logo-circle"><img src="https://i.ibb.co.com/6JRmwNQJ/IMG-20260219-191930-656.jpghttps://i.ibb.co.com/6JRmwNQJ/IMG-20260219-191930-656.jpg"></div>
+      <h1>Ratul_Vai_Ai_Hack</h1>
+      <input id="pwd" type="password" placeholder="ENTER KEY" autocomplete="off">
+      <div id="msg"></div>
+      <button class="btn login-btn" onclick="login()">LOGIN</button>
+      <a href="https://t.me/DkWin_From_Bangladesh777" target="_blank" class="btn telegram-btn">TELEGRAM</a>
+    </div>
+  </div>
+
+  <div id="modBox">
+    <div class="closeBtn" onclick="closeBox()">×</div>
+    <div class="mod-title">Ratul_Vai_Ai_Hack</div>
+    <div class="time" id="timeNow">00:00:00</div>
+    <div class="count" id="countDown">0s</div>
+    <div id="signalText" class="signal">...</div>
+  </div>
+</div>
+
+<script>
+let isLoggedIn = false;
+let prev30 = -1;
+
+function openBox() {
+  document.getElementById("miniBtn").style.display = "none";
+  if (!isLoggedIn) {
+    document.getElementById("loginBox").style.display = "flex";
+  } else {
+    document.getElementById("modBox").style.display = "flex";
+  }
+}
+
+function closeBox() {
+  document.getElementById("loginBox").style.display = "none";
+  document.getElementById("modBox").style.display = "none";
+  document.getElementById("miniBtn").style.display = "flex";
+}
+
+function login(){
+  const userKey = document.getElementById('pwd').value;
+  const msg = document.getElementById('msg');
+  if(userKey === "Ratul@boss"){
+    isLoggedIn = true;
+    document.getElementById("loginBox").style.display = "none";
+    document.getElementById("modBox").style.display = "flex";
+  } else {
+    msg.style.color = "#ff4d4d";
+    msg.innerHTML = "WRONG KEY!";
+    document.getElementById('pwd').value = "";
+  }
+}
+
+setInterval(() => {
+  const now = new Date();
+  const sec = now.getSeconds();
+  if (document.getElementById("modBox").style.display === "flex") {
+    document.getElementById("timeNow").innerText = now.toLocaleTimeString("en-GB");
+    const left = 30 - (sec % 30);
+    document.getElementById("countDown").innerText = left + "s";
+    let curr30 = Math.floor(sec / 30);
+    if (curr30 !== prev30) {
+      const signals = ["BIG", "SMALL"];
+      document.getElementById("signalText").innerText = signals[Math.floor(Math.random() * 2)];
+      prev30 = curr30;
+    }
+  }
+}, 500);
+
+function makeDraggable(el) {
+  let offsetX, offsetY, isDragging = false;
+  const start = (e) => {
+    if (e.target.tagName === "INPUT" || e.target.tagName === "BUTTON" || e.target.className === "closeBtn" || e.target.className.includes("btn")) return;
+    isDragging = true;
+    const clientX = e.type === "touchstart" ? e.touches[0].clientX : e.clientX;
+    const clientY = e.type === "touchstart" ? e.touches[0].clientY : e.clientY;
+    const rect = el.getBoundingClientRect();
+    offsetX = clientX - rect.left;
+    offsetY = clientY - rect.top;
+  };
+  const move = (e) => {
+    if (!isDragging) return;
+    if(e.cancelable) e.preventDefault(); 
+    const clientX = e.type === "touchmove" ? e.touches[0].clientX : e.clientX;
+    const clientY = e.type === "touchmove" ? e.touches[0].clientY : e.clientY;
+    el.style.left = (clientX - offsetX) + "px";
+    el.style.top = (clientY - offsetY) + "px";
+  };
+  const stop = () => isDragging = false;
+  el.addEventListener("mousedown", start);
+  el.addEventListener("touchstart", start, {passive: true});
+  document.addEventListener("mousemove", move);
+  document.addEventListener("touchmove", move, {passive: false}); 
+  document.addEventListener("mouseup", stop);
+  document.addEventListener("touchend", stop);
+}
+
+makeDraggable(document.getElementById("miniBtn"));
+makeDraggable(document.getElementById("loginBox"));
+makeDraggable(document.getElementById("modBox"));
+</script>
+
+</body>
+</html>
+? e.touches[0].clientX : e.clientX;
+    const clientY = e.type === "touchmove" ? e.touches[0].clientY : e.clientY;
+    el.style.left = (clientX - offsetX) + "px";
+    el.style.top = (clientY - offsetY) + "px";
+  };
+  const stop = () => isDragging = false;
+  
+  el.addEventListener("mousedown", start);
+  el.addEventListener("touchstart", start, {passive: true});
+  document.addEventListener("mousemove", move);
+  document.addEventListener("touchmove", move, {passive: false}); 
+  document.addEventListener("mouseup", stop);
+  document.addEventListener("touchend", stop);
+}
+
+makeDraggable(document.getElementById("miniBtn"));
+makeDraggable(document.getElementById("loginBox"));
+makeDraggable(document.getElementById("modBox"));
+</script>
+
+</body>
+</html>
+d("modBox"));
+</script>
+
+</body>
+</html>
